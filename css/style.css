@@ -1,11 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url(base.css);
+
+/* Header Section css  */
+header .bg{
+  padding: 15px;
+}
+header .logo img{
+  width: 50px;
 }
 
+
+/* Sign In Page css  */
+
+.main-box{
+  padding: 20px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.bg-box{
+  background-image: url(../images/login-bg.png);
+  width: 90%;
+  height: 80%;
+  border-radius: 25px;
+}
+.bg-box .form-box{
+  width: 400px;
+  height: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* particle Css */
+/* ---- reset ---- */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
 }
-
-/*# sourceMappingURL=style.css.map */
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -9999;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: transparent;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}

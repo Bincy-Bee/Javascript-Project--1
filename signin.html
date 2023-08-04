@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - BG</title>
+    <style>
+        @import url(css/style.css);
+        @import url(css/all.min.css);
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-base teko">
+    <!-- background particle  -->
+    <div id="particles-js"></div>
+    <div class="count-particles"><span class="js-count-particles"></span></div>
+    <!-- FORM SECTION  -->
+    <div class="main-box relative">
+        <div class="bg-box">
+            <div class="form-box text-center outline outline-offset-1 rounded-md outline-burnt absolute left-[40%] top-[50px]">
+                <h2 class="font-black text-4xl burnt-umber p-4 mb-0">Sign in to BG Blogs</h2>
+                <form class="text-left px-5">
+                    <label for="uname" class="burnt-umber mb-2 font-normal">Username or Email</label>
+                    <input type="text" id="uname" placeholder="Enter Username or Email" class="w-full border border-burnt rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-white focus:border-white">
+                    <p class="ml-4 text-red-600 mb-2">condition alert</p>
+                    <label for="password" class="burnt-umber my-2 font-normal">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" class="w-full border border-burnt rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-white focus:border-white">
+                    <p class="ml-4 text-red-600 mb-2">condition alert</p>
+                    <input type="submit" value="Sign In" class="w-full border border-burnt py-1 px-4 rounded-md text-base text-white hover:border-black hover:text-white hover:bg-black">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./particle.js"></script>
+</body>
+</html>

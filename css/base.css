@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  :root{
+    --white: #ffffff;
+    --black : #000000;
+    --burnt-umber : #8A3723;
+  }
+  .apple{
+    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .teko{
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1px;
+  }
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  .white{
+    color: var(--white);
+  }
+  .black{
+    color: var(--black);
+  }
+  .burnt-umber{
+    color: var(--burnt-umber);
+  }
+  .bg-white{
+    background-color: var(--white);
+  }
+  .bg-black{
+    background-color: vat(--black);
+  }
+  .bg-burnt-umber{
+    background-color: var(--burnt-umber);
+  }
+  .border-burnt{
+    border: 1px solid var(--burnt-umber);
+  }
+  .outline-burnt{
+    outline: 1px solid var(--burnt-umber);
+  }

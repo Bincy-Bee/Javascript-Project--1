@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project -1</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
         @import url(css/style.css);
+        @import url(css/all.min.css);
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        
+<body class="text-base ">
+    <!-- background particle  -->
+    <div id="particles-js"></div>
+    <div class="count-particles"><span class="js-count-particles"></span></div> 
+    <!-- Header Section  -->
+    <header class="p-3.5">
+        <div class="bg bg-burnt-umber">
+            <div class="container">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/bg-logo.png" alt=""></a>
+                    </div>
+                    <nav>
+                        <ul class="flex flex-wrap">
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="#">Home</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="#">Blog</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="#">Add Blogs</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="#">About</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <label class="relative block">
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input class="teko text-sm placeholder:text-black block bg-burnt-umber w-full border border-black rounded-md py-1 pl-9 pr-3 shadow-sm focus:outline-none focus:border-white  sm:text-sm" placeholder="Search" type="text" name="search"/>
+                          </label>
+                    </div>
+                    <div class="btn-group">
+                        <a href="signin.html" class="teko hover:border border-black py-1 px-2.5 rounded-md text-base hover:text-white hover:bg-black">Sign In</a href="">
+                        <span>|</span>
+                        <a href="signup.html" class="teko hover:border border-black py-1 px-2.5 rounded-md text-base hover:text-white hover:bg-black">Sign Up</a>
+                    </div>
+                </div>
+        </div>
+
+        </div>
     </header>
     <script src="./index.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./particle.js"></script>
 </body>
 </html>
