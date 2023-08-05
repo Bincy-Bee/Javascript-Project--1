@@ -12,25 +12,58 @@ header .logo img{
 /* Sign In Page css  */
 
 .main-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+.form-box{
+  width: 400px;
+  background-color: rgb(138, 56, 35);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+.form-box p{
+  color: rgb(99, 5, 5);
+}
+#submit{
+ cursor: pointer;
+}
+
+
+
+/* Babber Section Css  */
+.banner{
   padding: 20px;
-  background-color: #1f1f1f;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-}
-.bg-box{
-  background-image: url(../images/login-bg.png);
-  width: 90%;
-  height: 80%;
-  border-radius: 25px;
-}
-.bg-box .form-box{
-  width: 400px;
-  height: 340px;
-}
+  height: 100%;
 
+}
+.banner-bg{
+  position: relative;
+}
+.banner-bg img{
+  width: 100%;
+  z-index: 0;
+}
+.banner-bg::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.521);
+  z-index: -1;
+}
+.banner-bg h1{
+  z-index: 99;
+}
 
 
 
@@ -62,10 +95,10 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #000000;
   background-image: url("");
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   background-size: cover;
   background-position: 50% 50%;
   z-index: -9999;
