@@ -31,9 +31,18 @@ header .logo img{
  cursor: pointer;
 }
 
+/* Blost Post Form  */
+
+.form-post{
+  width: 90%;
+  background-color: rgb(138, 56, 35);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
 
 
-/* Babber Section Css  */
+
+/* Banner Section Css  */
 .banner{
   padding: 20px;
   background-color: transparent;
@@ -46,10 +55,11 @@ header .logo img{
 }
 .banner-bg{
   position: relative;
+  z-index: -55;
 }
 .banner-bg img{
   width: 100%;
-  z-index: 0;
+ 
 }
 .banner-bg::after{
   position: absolute;
@@ -58,8 +68,8 @@ header .logo img{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.521);
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.621);
+  z-index: 0;
 }
 .banner-bg h1{
   z-index: 99;
@@ -67,7 +77,14 @@ header .logo img{
 
 
 
+/* blogs Page Css  */
 
+.sub-display{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
 
 
 
