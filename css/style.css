@@ -19,6 +19,15 @@ header .logo img{
  
 }
 .form-box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000069;
+  position: relative;
+}
+.form{
   width: 400px;
   background-color: rgb(138, 56, 35);
   backdrop-filter: blur(10px);
@@ -87,7 +96,25 @@ header .logo img{
 }
 
 
+/* sign up page css  */
 
+.main-popbox{
+  position: absolute;
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000b2;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: 999;
+}
+.pop-up-open{
+    visibility: visible;
+    transform: scale(1);
+}
 
 
 
