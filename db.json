@@ -1,60 +1,32 @@
 {
   "signupdata": [
     {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=15001",
+      "name": "Bhavin",
+      "email": "patelbhavin7784@gmail.com",
+      "password": "Bhavin@1234",
+      "repassword": "Bhavin@1234",
       "id": 1
     },
     {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
+      "name": "Mohini",
+      "email": "mohinibhavin7@gmail.com",
+      "password": "Mohini=0712",
+      "repassword": "Mohini=0712",
       "id": 2
     },
     {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
+      "name": "Ronak",
+      "email": "ronalraj@gmail.com",
+      "password": "Ronak&4444",
+      "repassword": "Ronak&4444",
       "id": 3
     },
     {
-      "name1": "Mohini",
-      "email1": "mohini@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
+      "name": "Raj",
+      "email": "rajpatel@gmail.com",
+      "password": "Raj=2512",
+      "repassword": "Raj=2512",
       "id": 4
-    },
-    {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
-      "id": 5
-    },
-    {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
-      "id": 6
-    },
-    {
-      "name1": "Raja",
-      "email1": "Raja@gmail.com",
-      "password1": "Raja&12345",
-      "repassword1": "Raja&12345",
-      "id": 7
-    },
-    {
-      "name1": "Bhavin",
-      "email1": "patelbhavin7784@gmail.com",
-      "password1": "Bhavin=1501",
-      "repassword1": "Bhavin=1501",
-      "id": 8
     }
   ],
   "signindata": [],

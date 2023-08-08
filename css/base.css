@@ -7,14 +7,18 @@
   }
   :root{
     --white: #ffffff;
-    --black : #000000;
-    --burnt-umber : #8a3723;
+    --black : #0f0d6d;
+    --burnt-umber : #3533db83;
+    --burnt-umber-100 :#9796ED;
   }
   .apple{
     font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
   }
+  body{
+    /* background-color: rgb(78, 76, 76) */
+  }
   .teko{
-  font-family: 'Teko', sans-serif;
+    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: 1px;
   }
   .container {
@@ -52,6 +56,9 @@
   .burnt-umber{
     color: var(--burnt-umber);
   }
+  .burnt-umber-100{
+    color: var(--burnt-umber-100);
+  }
   .bg-white{
     background-color: var(--white);
   }
@@ -61,9 +68,18 @@
   .bg-burnt-umber{
     background-color: var(--burnt-umber);
   }
+  .bg-burnt-umber-100{
+    background-color: var(--burnt-umber-100);
+  }
   .border-burnt{
     border: 1px solid var(--burnt-umber);
   }
+  .border-burnt-100{
+    border: 1px solid var(--burnt-umber-100);
+  }
   .outline-burnt{
     outline: 1px solid var(--burnt-umber);
+  }
+  .outline-burnt-100{
+    outline: 1px solid var(--burnt-umber-100);
   }
