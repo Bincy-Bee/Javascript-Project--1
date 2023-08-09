@@ -1,3 +1,6 @@
+
+
+
 let signinpop = document.getElementById("signinpop");
 const spopopen=()=>{
     signinpop.classList.add("pop-up-open");
@@ -6,8 +9,10 @@ const spopopen=()=>{
 const spopclose=()=>{
     signinpop.classList.remove("pop-up-open");
 
-
+    window.location.href="http://127.0.0.1:5500/index.html"; 
+   
 }
+
 // const ssen=(getdata)=>{
 //     console.log(getdata)
 //     let useremail = document.getElementById("uname").value;
@@ -67,9 +72,7 @@ document.getElementById("signinform").addEventListener("submit",(e)=>{
                 for (let i = 0; i < dada.length ; i++){
                 if( dada[i].email == useremail && dada[i].password == userpassword){
                     spopopen();
-                   window.location.href="http://127.0.0.1:5500/index.html";
-                   document.getElementById("btn-sign-in").value = "Sign Out";
-                   document.getElementById("btn-sign-up").value = "";
+                   
                 }
                 else{
                     document.getElementById("useremailalert").innerHTML = "** Invalid email !";

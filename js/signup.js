@@ -70,10 +70,9 @@ document.getElementById("signupform").addEventListener("submit",(e)=>{
         console.log(dada);
         
         if (dada.length > 0){
-                for (let i = 0; i < dada.length ; i++){
+            for (let i = 0; i < dada.length ; i++){
                 if( dada[i].email == email){
                     document.getElementById("uemailalert").innerHTML = "** Email already exist !";
-                
                 }
             }
         }

@@ -15,22 +15,23 @@
         <div class="form-box">
             <div class="main-popbox text-center" id="signinpop">
                 <div class="pop-up bg-burnt-umber-100 px-4 py-8 outline-2 outline-offset-4 rounded-md outline-burnt-100">
-                    <h4 class="teko text-4xl mb-4 black"><i class="fa-solid fa-square-check text-green-700"></i> Successfully Logeg In !!</h4>
-                    <h4 class="teko text-2xl mb-4">Welcome to BG Blogs!</h4>
-                    <h3 class="teko text-sm mb-8">Please click here. <a href="signin.html" class="underline underline-offset-4 font-black black">Sign In</a></h3>
-                    <button class="w-full border border-burnt py-1 px-4 mb-2 rounded-md bg-black text-white" id="enter">OK</button>
+                    <h4 class="teko text-2xl mb-4 black"><i class="fa-solid fa-square-check text-green-700"></i> Successfully Logeg In !!</h4>
+                    <h4 class="teko text-xl mb-4">Welcome to BG Blogs!</h4>
+                    <div class="text-center">
+                        <button class="w-[20%] border border-burnt py-1 px-4 mb-2 rounded-md bg-black text-white" id="enter">OK</button>
+                    </div>
                 </div>
             </div>
             <div class="form text-center outline-1 outline-offset-4 rounded-xl outline-burnt-100">
                 <h2 class="font-black text-4xl text-black p-4 mb-3">Sign In</h2>
                 <form class="text-left px-5" id="signinform">
                     <label for="uname" class="black mb-2 font-bold">Email</label>
-                    <input type="text" id="uname" placeholder="email@address.com" class="w-full border border-black rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-black focus:border-white placeholder:text-slate-500 font-bold placeholder:font-normal" id="suname">
+                    <input type="text" id="uname" placeholder="email@address.com" class="w-full border border-black rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-black focus:border-white placeholder:text-slate-500 font-normal placeholder:font-normal" id="suname">
                     <p class="ml-2 text-red-100 font-bold mb-2" id="useremailalert"></p>
 
                     <label for="password" class="black my-2 font-bold">Password</label>
                     <input type="password" id="password" placeholder="Enter Password" class="w-full border border-black rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-black focus:border-white placeholder:text-slate-500 font-bold placeholder:font-normal" id="supassword">
-                    <p class="ml-2 text-red-100 font-bold mb-4" id="userpassalert"></p>
+                    <p class="ml-2 text-red-100 font-normal mb-4" id="userpassalert"></p>
 
                     <input type="submit" value="Sign In" class="w-full border border-burnt py-1 px-4 mt-4 mb-2 rounded-md bg-black text-white" id="submit">
                 </form>

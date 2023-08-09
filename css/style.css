@@ -14,7 +14,12 @@ header .logo img{
 .search input::placeholder{
   color: var(--black);
 }
-
+.btn-group{
+  display: block;
+}
+.signout{
+  display: none;
+}
 
 /* Sign In Page css  */
 
@@ -93,11 +98,47 @@ header .logo img{
 
 /* blogs Page Css  */
 
-.sub-display{
+#displayui{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   text-align: center;
+ 
+}
+#sub-div{
+  padding: 15px;
+  height: 350px;
+  background-color: var(--burnt-umber-100);
+  border: 1px solid var(--burnt-umber-100);
+  border-radius: 6px;
+  overflow: hidden;
+}
+#sub-div img{
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+#sub-div h2{
+  font-size: 20px ;
+  line-height: 28px ;
+  font-weight: 700;
+}
+#sub-div h4{
+  margin: 0;
+  margin: 8px 0px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+#sub-div p{
+  text-align: justify;
+  overflow: hidden;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 

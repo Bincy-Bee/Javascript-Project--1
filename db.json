@@ -37,5 +37,41 @@
     }
   ],
   "signindata": [],
-  "addblogs": []
+  "addblogs": [
+    {
+      "conimg": "https://images.carandbike.com/bike-images/large/okinawa/dual/okinawa-dual.jpg?v=4",
+      "category": "Technology",
+      "title": "EV Bike",
+      "content": "The motor. Electric bikes have many parts in common with muscle-powered bikes (like the frame, which is very similar, the wheels, the handlebar and the gear shift). The components that most differentiate e-bikes from their conventional counterparts are the motor, the battery and the sensor.",
+      "id": 1
+    },
+    {
+      "conimg": "https://static.toiimg.com/imagenext/toiblogs/photo/blogs/wp-content/uploads/2023/08/Rohit-Sharma.png",
+      "category": "Sports",
+      "title": "Winners & Learners",
+      "content": "As India prepares to host the 13th edition of the ICC Men’s Cricket World Cup this year, a tournament it has won twice in the past, eyes will be fixed on the country’s top athletes. Not least Rohit Sharma, the current captain of the Indian men’s cricket team and considered one of the greatest opening batters of all time.\nSharma currently holds the world record for the highest individual score in a One Day International (ODI) match. In addition to his elegance and timing, Sharma is known for his leadership skills, having guided the Mumbai Indians to several victories in the Indian Premier League (IPL) during his captaincy.",
+      "id": 2
+    },
+    {
+      "conimg": "https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124672.jpg",
+      "category": "Technology",
+      "title": "Silent danger",
+      "content": "Artificial intelligence (AI) is a powerful technology that can create amazing applications and benefits for humanity. However, it can also be misused by malicious actors who seek to exploit its capabilities for their own gain. One of the emerging threats that has alarmed authorities and experts is the use of AI voice cloning to scam people.\nVoice cloning is the process of creating a synthetic voice that sounds identical or similar to a real person’s voice. AI voice cloning tools use deep learning algorithms to analyse a sample of a person’s voice and generate new speech based on it.",
+      "id": 3
+    },
+    {
+      "conimg": "https://images.pexels.com/photos/1144690/pexels-photo-1144690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "category": "Science",
+      "title": " The dwindling visibility of stars!",
+      "content": "The night sky, once a canvas of brilliance, has been silently fading away, masked by an insidious foe known to us as light pollution. As our world becomes increasingly illuminated, a significant number of stars have been lost to the veil of artificial light. This dive deep into the dark side of light pollution, its far-reaching consequences, requires the urgent need for awareness and action.",
+      "id": 4
+    },
+    {
+      "conimg": "https://images.unsplash.com/photo-1589740706488-e8d45a82f88e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9vbiUyMGFuZCUyMHN0YXJzfGVufDB8fDB8fHww&w=1000&q=80",
+      "category": "Science",
+      "title": "The moon & stars",
+      "content": "oday, India’s space research organisation is launching its third lunar mission, Chandrayaan III. Zero gravity trips are happening; space explorers landed on the moon and NASA sent spacecraft to study the planets Saturn and Jupiter – yet, nothing really changes the nature of the universe. We are witnesses to the cosmic canvas, just as are the Hubble, Chandra and other telescopes in the sky. On a smaller scale, in our immediate environment, we may be destroying trees, polluting oceans and creating junk in space, but on a galactic scale, nothing really changes. Human beings, thank goodness, are not the centre of the universe.",
+      "id": 5
+    }
+  ]
 }
