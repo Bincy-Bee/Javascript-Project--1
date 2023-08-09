@@ -12,7 +12,7 @@
 <body class="text-base ">
     <!-- Header Section  -->
     <header class="px-3.5 pt-3.5">
-        <div class="bg bg-burnt-umber outline-2 outline-offset-4 rounded-md outline-burnt">
+        <div class="bg bg-burnt-umber rounded-md">
             <div class="container">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="logo">
@@ -20,25 +20,25 @@
                     </div>
                     <nav>
                         <ul class="flex flex-wrap">
-                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="index.html">Home</a></li>
-                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="./pages/blogs.html">Blogs</a></li>
-                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="./pages/write.html">Write Blogs</a></li>
-                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-normal hover:border border-black hover:text-white hover:bg-black teko" href="#">About</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-bold hover:border border-black hover:text-white hover:bg-black teko" href="index.html">Home</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-bold hover:border border-black hover:text-white hover:bg-black teko" href="./pages/blogs.html">Blogs</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-bold hover:border border-black hover:text-white hover:bg-black teko" href="./pages/write.html">Write Blogs</a></li>
+                            <li><a class="black mx-2 py-1 px-2.5 rounded-md font-bold hover:border border-black hover:text-white hover:bg-black teko" href="#">About</a></li>
                         </ul>
                     </nav>
                     <div class="search">
                         <label class="relative block">
                             <span class="sr-only">Search</span>
                             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-magnifying-glass black"></i>
                             </span>
-                            <input class="teko placeholder:text-sm placeholder:text-black block bg-transparent w-full border border-black rounded-md py-1 pl-9 pr-3 shadow-sm focus:outline-none focus:border-white placeholder:font-normal sm:text-sm" placeholder="Search" type="text" name="search"/>
+                            <input class="teko black font-bold placeholder:text-sm block bg-transparent w-full border border-black-100 rounded-md py-1 pl-9 pr-3 shadow-sm focus:outline-none focus:border-white placeholder:font-normal sm:text-sm" placeholder="Search" type="text" name="search"/>
                           </label>
                     </div>
                     <div class="btn-group" >
-                        <button class="teko hover:border border-black py-1 px-2.5 rounded-md text-base hover:text-white hover:bg-black" value="Sign Up" id="btn-sign-up"><a href="./pages/signup.html" >Sign Up</a></button>
-                        <span>|</span>
-                        <button class="teko hover:border border-black py-1 px-2.5 rounded-md text-base hover:text-white hover:bg-black" value="Sign In" id="btn-sign-in"><a href="./pages/signin.html" >Sign In</a href=""></button>
+                        <button class="teko hover:border border-black py-1 px-2 rounded-md text-base hover:text-white hover:bg-black black font-bold" value="Sign Up" id="btn-sign-up"><a href="./pages/signup.html" >Sign Up</a></button>
+                        <!-- <span>|</span> -->
+                        <button class="teko hover:border border-black py-1 px-2 rounded-md text-base hover:text-white hover:bg-black black font-bold" value="Sign In" id="btn-sign-in"><a href="./pages/signin.html" >Sign In</a href=""></button>
                     </div>
                 </div>
             </div>
@@ -47,15 +47,18 @@
     <!-- banner Section  -->
     <section class="banner px-3.5 pt-3.5 rounded-md">
         <div class="banner-bg">
-            <div class="banner-text-bg bg-cover text-center outline-2 outline-offset-4 rounded-md outline-burnt">
-                <h1 class="teko text-7xl burnt-umber font-black">YOU ARE SUCH a RARE find.</h1>
-                <p class="teko text-2xl burnt-umber-100 text-center mt-3 italic">"Discover stories, thinking, and expertisefrom writers on any topic."</p>
-                <button class="teko bg-burnt-umber py-1 px-3.5 mt-7 ml-6 rounded-md hover:opacity-80 font-normal outline outline-offset-2 outline-2 outline-burnt"><a href="write.html">Start Writing</a></button>
-                <button class="teko bg-burnt-umber py-1 px-3.5 mt-7 ml-6 rounded-md hover:opacity-80 font-normal outline outline-offset-2 outline-2 outline-burnt "><a href="blogs.html">Start Reading</a></button>
+            <div class="banner-text-bg bg-cover rounded-md">
+                <h1 class="teko text-7xl black font-black text-left ml-8">YOU ARE SUCH a <br>
+                    RARE find.</h1>
+                <p class="teko text-xl black text-left mt-3 italic text-left ml-8">"Discover stories, thinking, and expertise <br> from writers on any topic."</p>
+                <button class="teko bg-burnt-umber py-1 px-3.5 mt-7 ml-6 rounded-md hover:opacity-80 font-bold black ml-8"><a href="write.html">Start Writing</a></button>
+                <button class="teko bg-burnt-umber py-1 px-3.5 mt-7 ml-6 rounded-md hover:opacity-80 font-bold black ml-8"><a href="blogs.html">Start Reading</a></button>
             </div>
         </div>
     </section>
     <script src="./index.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/signin.js"></script>
     <script src="js/cdn.tailwindcss.com_3.3.js"></script>
 </body>
 </html>

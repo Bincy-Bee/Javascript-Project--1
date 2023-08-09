@@ -3,11 +3,16 @@
 /* Header Section css  */
 
 header .bg{
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
   padding: 20px;
 
 }
 header .logo img{
   width: 50px;
+}
+.search input::placeholder{
+  color: var(--black);
 }
 
 
@@ -36,8 +41,9 @@ header .logo img{
   width: 400px;
   background-color: var(--burnt-umber-100);
   backdrop-filter: blur(10px);
-  padding: 10px;
+  padding: 10px;  
 }
+
 .form-box p{
   color: rgb(99, 5, 5);
 }
@@ -45,26 +51,41 @@ header .logo img{
  cursor: pointer;
 }
 
-/* Blost Post Form  */
-
+/* Write post Post Form  */
 .form-post{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.178);
+  backdrop-filter: blur(1px);
+  background-size: cover;
+  position: relative;
+}
+.form-post .form{
   width: 90%;
-  background-color: rgb(138, 56, 35);
+  background-color: var(--burnt-umber-100);
   backdrop-filter: blur(10px);
   padding: 10px;
+}
+.form-post p{
+  color: rgb(99, 5, 5);
 }
 
 
 
 /* Banner Section Css  */
 .banner-bg{
-  background-image: url(../images/table-background.jpg);
+  background-image: url(../images/banner-brain-bg-c.jpg);
+  background-position: top;
   background-size: cover;
+  border-radius: 6px;
 }
 
 .banner-text-bg{
-  background-color: rgba(255, 255, 255, 0.397);
-  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.2);
+  /* backdrop-filter: blur(1px); */
   width: 100%;
   height: 100vh;
   padding: 250px 0px;

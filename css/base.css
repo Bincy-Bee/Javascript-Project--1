@@ -53,6 +53,9 @@
   .black{
     color: var(--black);
   }
+  .bg-black-100{
+    background-color: var(--black);
+  }
   .burnt-umber{
     color: var(--burnt-umber);
   }
@@ -64,6 +67,9 @@
   }
   .bg-black{
     background-color: vat(--black);
+  }
+  .border-black-100{
+    border: 1px solid var(--black);
   }
   .bg-burnt-umber{
     background-color: var(--burnt-umber);

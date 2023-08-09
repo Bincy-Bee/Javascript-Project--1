@@ -27,6 +27,13 @@
       "password": "Raj=2512",
       "repassword": "Raj=2512",
       "id": 4
+    },
+    {
+      "name": "Viral",
+      "email": "viralpatel@gmail.com",
+      "password": "Viral@1211",
+      "repassword": "Voral@1211",
+      "id": 5
     }
   ],
   "signindata": [],

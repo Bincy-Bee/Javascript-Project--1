@@ -2,7 +2,7 @@
 // Signup page JS 
 
 let pops = document.getElementById("poping");
-
+console.log(pops)
 
 const popopen=()=>{
     pops.classList.add("pop-up-open");
@@ -60,15 +60,31 @@ document.getElementById("signupform").addEventListener("submit",(e)=>{
     }
 
     //condition for for popup box open
-    if (namecheck.test(name) && emailcheck.test(email) && passwordcheck.test(password) && password == repassword){
-         popopen();
-    }
+    // if (namecheck.test(name) && emailcheck.test(email) && passwordcheck.test(password) && password == repassword){
+    //      popopen();
+    // }
 
-  
+    fetch(`http://localhost:8080/signupdata?email=${email}`)
+    .then((xyz)=> xyz.json())
+    .then((dada)=>{
+        console.log(dada);
+        
+        if (dada.length > 0){
+                for (let i = 0; i < dada.length ; i++){
+                if( dada[i].email == email){
+                    document.getElementById("uemailalert").innerHTML = "** Email already exist !";
+                
+                }
+            }
+        }
+        else{
+            popopen();
+        }
+    })
 });
 document.getElementById("close").addEventListener("click",(e)=>{
     e.preventDefault();
-    let signupemail = document.getElementById("email").value;
+    
     let userdata = {
        name :document.getElementById("name").value,
        email : document.getElementById("email").value,
@@ -76,15 +92,6 @@ document.getElementById("close").addEventListener("click",(e)=>{
        repassword : document.getElementById("repassword").value,
     }
    console.log(userdata);
-//    fetch(`http://localhost:8080/signupdata?email=${signupemail}`)
-//     .then((xyz)=>{
-//         let request = xyz;
-//         if (request.length > 0){
-//             if (request[i].email == signupemail){
-//                 document.getElementById("uemailalert").innerHTML = "User Alredy exist";
-//             }
-//         }
-//     })
 
     fetch("http://localhost:8080/signupdata",{
         method : "POST",
