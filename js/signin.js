@@ -13,27 +13,6 @@ const spopclose=()=>{
    
 }
 
-// const ssen=(getdata)=>{
-//     console.log(getdata)
-//     let useremail = document.getElementById("uname").value;
-//     let userpassword = document.getElementById("password").value;
-
-//     let emailsave = getdata.filter((item)=> item.email == useremail);
-//     let passsave = getdata.filter((item)=> item.password == userpassword);
-
-//     if (getdata.length > 0){
-//         if( emailsave == useremail && passsave == userpassword){
-//             alert("email & PAss same as server ")
-//         }
-//         else{
-//             alert("not same")
-//         }
-//     }
-//     else{
-//         alert("user not exit")
-//     }
-// };
-
 document.getElementById("signinform").addEventListener("submit",(e)=>{
     e.preventDefault();
 

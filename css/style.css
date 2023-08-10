@@ -120,10 +120,11 @@ header .logo img{
   object-fit: cover;
 }
 #sub-div h2{
-  font-size: 20px ;
+  font-size: 16px ;
   line-height: 28px ;
   font-weight: 700;
   margin-bottom: 5px;
+  text-align: left;
 }
 #sub-div h4{
   margin: 0;
