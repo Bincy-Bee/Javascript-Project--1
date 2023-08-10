@@ -1,5 +1,5 @@
 
-
+let data = JSON.parse(localStorage.getItem("datas")) || [];
 
 let signinpop = document.getElementById("signinpop");
 const spopopen=()=>{
@@ -36,16 +36,12 @@ document.getElementById("signinform").addEventListener("submit",(e)=>{
         document.getElementById("userpassalert").innerHTML = "** Invalid password !";
     }
 
-    // if (emailcheck.test(useremail) && passwordcheck.test(userpassword)){
-    //     spopopen();
-    // }
-
-    // check useremail & Password as per signup data
 
     fetch(`http://localhost:8080/signupdata?email=${useremail}`)
     .then((xyz)=> xyz.json())
     .then((dada)=>{
         console.log(dada);
+        localStorage.setItem("datas", JSON.stringify(dada));
         
         if (dada.length > 0){
                 for (let i = 0; i < dada.length ; i++){

@@ -9,22 +9,7 @@
         @import url(../css/all.min.css);
     </style>
 </head>
-<body class="text-base teko">
-    <!-- header section  -->
-    <header class="px-3.5 pt-3.5 absolute w-full z-50">
-        <div class="p-4 bg-burnt-umber-100 rounded-md">
-            <div class="container">
-                <div class="flex flex-wrap justify-between items-center">
-                    <div class="logo">
-                        <a href="../index.html"><img src="../images/bg-logo.png" alt=""></a>
-                    </div>
-                    <div class="btn-group"  >
-                        <i class="fa-solid fa-xmark teko border border-transparent hover:border py-1 px-2 rounded-md text-lg hover:text-white hover:bg-black black font-bold"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<body class="text-base teko ">
     <!-- FORM SECTION  -->
     <div class="main-box">
         <div class="form-box">
@@ -38,7 +23,10 @@
                 </div>
             </div>
             <div class="form text-center outline-1 outline-offset-4 rounded-xl outline-burnt-100">
-                <h2 class="font-black text-4xl text-black p-4 mb-3">Sign In</h2>
+                <div class="logo w-[60px] m-auto mt-3">
+                    <a href="../index.html"><img src="../images/bg-logo.png" alt=""></a>
+                </div>
+                <h2 class="font-black text-3xl text-black p-4 mb-3">Sign In</h2>
                 <form class="text-left px-5" id="signinform">
                     <label for="uname" class="black mb-2 font-bold">Email</label>
                     <input type="text" id="uname" placeholder="email@address.com" class="w-full border border-black rounded-md px-2 py-1 my-2 bg-transparent focus:outline-none focus:text-black focus:border-white placeholder:text-slate-500 font-normal placeholder:font-normal" id="suname">

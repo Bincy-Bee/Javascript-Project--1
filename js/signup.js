@@ -1,3 +1,4 @@
+let data = JSON.parse(localStorage.getItem("datas")) || [];
 
 // Signup page JS 
 
@@ -68,6 +69,7 @@ document.getElementById("signupform").addEventListener("submit",(e)=>{
     .then((xyz)=> xyz.json())
     .then((dada)=>{
         console.log(dada);
+        localStorage.setItem("datas", JSON.stringify(dada));
         
         if (dada.length > 0){
             for (let i = 0; i < dada.length ; i++){

@@ -14,13 +14,43 @@ header .logo img{
 .search input::placeholder{
   color: var(--black);
 }
-.btn-group{
-  display: block;
-}
-/* .signout{
-  display: none;
-} */
 
+/* About Section  */
+
+.about-bg{
+  background-image: url(../images/aboutus-bg.webp);
+  background-size: cover;
+ 
+}
+.about-overlay{
+  background-color: #9796edb0;
+  padding: 100px 0px;
+  border-radius: 6px;
+
+}
+.text-about button{
+  padding: 8px 20px;
+  background-color: var(--black);
+  transition: all 0.5s ease;
+}
+.about-main-bg{
+  background-image: url(../images/us-bg-img.jpg);
+  background-size: cover;
+}
+
+.us-bg img{
+  border-radius: 6px;
+}
+
+.text-about button:hover .fa-angles-right{
+  transform: translateX(3px);
+}
+/* Footer Section Css  */
+.footer-bg {
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  padding: 20px;
+}
 /* Sign In Page css  */
 
 .main-box{
@@ -103,7 +133,6 @@ header .logo img{
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
- 
 }
 #sub-div{
   padding: 15px;
@@ -136,7 +165,6 @@ header .logo img{
 
 #sub-div p{
   text-align: justify;
-  overflow: hidden;
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;

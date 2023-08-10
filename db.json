@@ -34,6 +34,13 @@
       "password": "Viral@1211",
       "repassword": "Voral@1211",
       "id": 5
+    },
+    {
+      "name": "Sajan",
+      "email": "sajan0301@gmail.com",
+      "password": "Sajan@0301",
+      "repassword": "Sajan@0301",
+      "id": 6
     }
   ],
   "signindata": [],
