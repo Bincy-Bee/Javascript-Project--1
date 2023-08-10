@@ -11,13 +11,58 @@
     </style>
 </head>
 <body class="text-base p-2 ">
+    <header class="pb-3.5">
+        <div class="bg bg-burnt-umber rounded-md">
+            <div class="container">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/bg-logo.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <label class="relative block">
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa-solid fa-magnifying-glass black" id="startsearch"></i>
+                            </span>
+                            <input class="teko black font-bold placeholder:text-sm block bg-transparent w-full border border-black-100 rounded-md py-1 pl-9 pr-3 shadow-sm focus:outline-none focus:border-white placeholder:font-normal sm:text-sm" placeholder="Search" type="text" id="blogsearchinput"/>
+                          </label>
+                    </div>
+                    <div class="menu-bar" >
+                        <button class="teko hover:border border-black py-1 px-2 rounded-md text-lg hover:text-white hover:bg-black black font-bold" id="menu"><i class="fa-solid fa-bars"></i></button>
+                            <div class="menu-list w-[300px] h-[80%] p-4 absolute right-0 top-2 bg-burnt-umber-100 rounded-xl transition-all z-50 hidden" id="menu-list">
+                                <ul class="sort-ul mt-7 relative">
+                                    <li>
+                                        <span href="" class="teko font-bold black">Sort by Category</span>
+                                        <ol class="mb-2">
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="all">Default</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="tech">Technology</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="gad">Gadgets</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="spo">Sports</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="heal">Health</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="edu">Education</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="ent">Entertainment</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="sci">Science</button></li>
+                                            <li><button class="teko text-sm font-bold hover:text-white hover:bg-black px-2 py-1 ml-2 rounded-md" id="int">Internet</button></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <div class="close-btn absolute top-2.5 right-2.5 transition-all" id="ul-close">
+                                    <i class="fa-solid fa-xmark teko hover:border border-black py-1 px-2 rounded-md text-lg hover:text-white hover:bg-black black font-bold"></i>
+                                </div>
+                                <div class="signout">
+                                    <button class="teko mt-3 border-black rounded-md text-base hover:text-white black font-bold" value="Sign In" id="btn-sign-out"><a href="../index.html" >Sign Out</a href=""></button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class=" blog outline-2 outline-offset-1 rounded-xl outline-burnt-100">
         <div class="blogs-display teko black p-1.5 rounded-md5" id="displayui">
-        
         </div>
     </section>
    
-    
 
     <script src="../js/blogs.js"></script>
     <script src="../js/write.js"></script>

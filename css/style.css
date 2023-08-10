@@ -17,9 +17,9 @@ header .logo img{
 .btn-group{
   display: block;
 }
-.signout{
+/* .signout{
   display: none;
-}
+} */
 
 /* Sign In Page css  */
 
@@ -101,7 +101,7 @@ header .logo img{
 #displayui{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 10px;
   text-align: center;
  
 }
@@ -123,6 +123,7 @@ header .logo img{
   font-size: 20px ;
   line-height: 28px ;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 #sub-div h4{
   margin: 0;
@@ -140,7 +141,9 @@ header .logo img{
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+.sort-ul{
+  border-bottom: 1px solid grey;
+}
 
 /* sign up page css  */
 
@@ -160,4 +163,17 @@ header .logo img{
 .pop-up-open{
     visibility: visible;
     transform: scale(1);
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.ul-hide{
+  right: 100%;
+}
+.ul-show{
+  right: 0;
 }
