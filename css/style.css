@@ -137,17 +137,18 @@ header .logo img{
 }
 #sub-div{
   padding: 15px;
-  height: 350px;
+  /* height: 350px; */
   background-color: var(--burnt-umber-100);
   border: 1px solid var(--burnt-umber-100);
   border-radius: 6px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #sub-div img{
   width: 100%;
   height: 180px;
   border-radius: 6px;
   object-fit: cover;
+  object-position: center;
 }
 #sub-div h2{
   font-size: 16px ;
@@ -167,17 +168,24 @@ header .logo img{
 #sub-div #context{
   text-align: justify;
   color: black;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  height: 100px;
+  overflow: auto;
+
 }
-.removestyle{
-  overflow: visible;
-  text-overflow: clip;
-  white-space: normal;
+#context::-webkit-scrollbar{
+  padding-left: 2px;
+  width: 4px;
+}
+#context::-webkit-scrollbar-track{
+  width: 2px;
+
+}
+#context::-webkit-scrollbar-thumb{
+  background-color: var(--black);
+  height: 15px;
 }
 #sub-div #readmore{
-  margin-top: 10px;
+  margin-top: 5px;
   display: inline-block;
   font-weight: 400;
   cursor: pointer;

@@ -1,4 +1,5 @@
 
+
 document.getElementById("menu").addEventListener("click", ()=>{
     document.getElementById("menu-list").style.display = "block";
 });
@@ -36,7 +37,6 @@ const display=(blogdata)=>{
     })
 
 }
-
 
 const searchcat=()=>{
     let serval = document.getElementById("blogsearchinput").value;
@@ -77,6 +77,7 @@ document.getElementById("edu").addEventListener("click", ()=> handelcat("Educati
 document.getElementById("ent").addEventListener("click", ()=> handelcat("Entertainment"));
 document.getElementById("sci").addEventListener("click", ()=> handelcat("Science"));
 document.getElementById("int").addEventListener("click", ()=> handelcat("Internet"));
+
 
 let get = async()=>{
     fetch("http://localhost:8080/addblogs")
