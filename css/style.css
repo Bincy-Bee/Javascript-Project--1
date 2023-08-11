@@ -133,6 +133,7 @@ header .logo img{
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
+
 }
 #sub-div{
   padding: 15px;
@@ -163,12 +164,24 @@ header .logo img{
   border-bottom: 1px solid black;
 }
 
-#sub-div p{
+#sub-div #context{
   text-align: justify;
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.removestyle{
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+#sub-div #readmore{
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
 }
 .sort-ul{
   border-bottom: 1px solid grey;

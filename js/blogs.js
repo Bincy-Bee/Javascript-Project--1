@@ -21,20 +21,22 @@ const display=(blogdata)=>{
 
         let content = document.createElement("p");
         content.innerHTML = ele.content;
-
+        content.setAttribute("id","context");
+    
         let btn = document.createElement("button");
-        btn.innerHTML = "More"
-        btn.setAttribute("id","moreread")
-
-        let div = document.createElement("div")
+        btn.innerHTML = "More...";
+        btn.setAttribute("id","readmore");
+        
+        let div = document.createElement("div");
         div.setAttribute("id","sub-div");
 
-        div.append(title, img, category, content,btn);
+        div.append(title, img, category, content, btn);
         document.getElementById("displayui").append(div);
 
     })
 
 }
+
 
 const searchcat=()=>{
     let serval = document.getElementById("blogsearchinput").value;
@@ -50,12 +52,12 @@ const searchcat=()=>{
 
 document.getElementById("startsearch").addEventListener("click", searchcat);
 
-document.getElementById("blogsearchinput").addEventListener("keypress",(e)=>{
-    console.log(e.key);
-    if (e.key == "Enter"){
-        searchcat();
-    }
-
+document.getElementById("blogsearchinput").addEventListener("input",(e)=>{
+    // console.log(e.key);
+    // if (e.key == "Enter"){
+    //     searchcat();
+    // }
+    searchcat();
 });
 
 const handelcat=(cat)=>{
