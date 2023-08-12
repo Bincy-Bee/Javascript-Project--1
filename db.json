@@ -41,6 +41,20 @@
       "password": "Sajan@0301",
       "repassword": "Sajan@0301",
       "id": 6
+    },
+    {
+      "name": "Harshil",
+      "email": "harshil@gmail.com",
+      "password": "Harshil@2222",
+      "repassword": "Harshil@2222",
+      "id": 7
+    },
+    {
+      "name": "Bhavin",
+      "email": "patelbhavin7784@gmail.com",
+      "password": "Bhavin@1234",
+      "repassword": "Bhavin@1234",
+      "id": 8
     }
   ],
   "signindata": [],

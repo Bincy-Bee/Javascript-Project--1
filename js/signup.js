@@ -60,28 +60,28 @@ document.getElementById("signupform").addEventListener("submit",(e)=>{
         document.getElementById("urepassalert").innerHTML = "** Password is mismatch !";
     }
 
-    //condition for for popup box open
-    // if (namecheck.test(name) && emailcheck.test(email) && passwordcheck.test(password) && password == repassword){
-    //      popopen();
-    // }
-
-    fetch(`http://localhost:8080/signupdata?email=${email}`)
-    .then((xyz)=> xyz.json())
-    .then((dada)=>{
-        console.log(dada);
-        localStorage.setItem("datas", JSON.stringify(dada));
-        
-        if (dada.length > 0){
-            for (let i = 0; i < dada.length ; i++){
-                if( dada[i].email == email){
-                    document.getElementById("uemailalert").innerHTML = "** Email already exist !";
+    // condition for for popup box open
+    if (namecheck.test(name) && emailcheck.test(email) && passwordcheck.test(password) && password == repassword){
+         
+        fetch(`http://localhost:8080/signupdata?email=${email}`)
+        .then((xyz)=> xyz.json())
+        .then((dada)=>{
+            console.log(dada);
+            localStorage.setItem("datas", JSON.stringify(dada));
+            
+            if (dada.length > 0){
+                for (let i = 0; i < dada.length ; i++){
+                    if( dada[i].email == email){
+                        document.getElementById("uemailalert").innerHTML = "** Email already exist !";
+                    }
                 }
             }
-        }
-        else{
-            popopen();
-        }
-    })
+            else{
+                popopen();
+            }
+        })
+    }
+
 });
 document.getElementById("close").addEventListener("click",(e)=>{
     e.preventDefault();

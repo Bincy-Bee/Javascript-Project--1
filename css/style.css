@@ -169,8 +169,9 @@ header .logo img{
   text-align: justify;
   color: black;
   height: 100px;
+  width: 100%;
   overflow: auto;
-
+  word-break: break-all;
 }
 #context::-webkit-scrollbar{
   padding-left: 2px;
