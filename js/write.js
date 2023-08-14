@@ -1,3 +1,7 @@
+let login = false;
+if (!login){
+    window.location.href="http://127.0.0.1:5500/pages/signin.html";
+}
 let popwrites = document.getElementById("writepop");
 console.log(popwrites)
 

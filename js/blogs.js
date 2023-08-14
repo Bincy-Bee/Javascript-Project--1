@@ -1,3 +1,8 @@
+let login = false;
+if (!login){
+    window.location.href="http://127.0.0.1:5500/pages/signin.html";
+}
+
 document.getElementById("backblog").addEventListener("click",()=>{
     window.history.back();
 })
