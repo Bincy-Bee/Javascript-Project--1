@@ -100,10 +100,16 @@ document.getElementById("close").addEventListener("click",(e)=>{
         body : JSON.stringify(userdata)
     })
     .then((res)=> res.json())
-    .then((dada)=> console.log(dada))
+    .then((dada)=> console.log(dada));
+
+    popclose();
 })
 
-document.getElementById("close").addEventListener("click", popclose);
+// document.getElementById("close").addEventListener("click", popclose);
+
+document.getElementById("backsignup").addEventListener("click",()=>{
+    window.history.back();
+})
 
 let get = async()=>{
 fetch("http://localhost:8080/signupdata")

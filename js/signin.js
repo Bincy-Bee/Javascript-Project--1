@@ -64,6 +64,10 @@ document.getElementById("signinform").addEventListener("submit",(e)=>{
 })
 document.getElementById("enter").addEventListener("click", spopclose);
 
+document.getElementById("backsignin").addEventListener("click",()=>{
+    window.history.back();
+})
+
 let get = async()=>{ 
 
     fetch("http://localhost:8080/signupdata")

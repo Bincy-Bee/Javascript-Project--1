@@ -1,4 +1,6 @@
-
+document.getElementById("backblog").addEventListener("click",()=>{
+    window.history.back();
+})
 
 document.getElementById("menu").addEventListener("click", ()=>{
     document.getElementById("menu-list").style.display = "block";

@@ -1,15 +1,21 @@
+let popwrites = document.getElementById("writepop");
+console.log(popwrites)
 
+const wpopopen=()=>{
+    popwrites.classList.add("pop-up-open");
+}
+
+const wpopclose=()=>{
+    popwrites.classList.remove("pop-up-open");
+
+    window.location.href="http://127.0.0.1:5500/index.html";
+}
 
 
 document.getElementById("blogpostform").addEventListener("submit", (e)=>{
     e.preventDefault();
     // create object for input
-    let blogs = {
-        conimg : document.getElementById("conimg").value,
-        category : document.getElementById("category").value,
-        title : document.getElementById("title").value,
-        content : document.getElementById("textcontent").value,
-    }
+    
 
     // Store value of input in store
     let conimg = document.getElementById("conimg").value;
@@ -47,7 +53,21 @@ document.getElementById("blogpostform").addEventListener("submit", (e)=>{
 
     // Condition all fullfiled then put condition
     if (conimg && category != catselect && title && content.length > 200 ){
-        fetch("http://localhost:8080/addblogs",{
+        wpopopen();
+    }
+
+   
+});
+document.getElementById("w-close").addEventListener("click",()=>{
+
+    let blogs = {
+        conimg : document.getElementById("conimg").value,
+        category : document.getElementById("category").value,
+        title : document.getElementById("title").value,
+        content : document.getElementById("textcontent").value,
+    }
+
+     fetch("http://localhost:8080/addblogs",{
             method : "POST",
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(blogs)
@@ -55,11 +75,13 @@ document.getElementById("blogpostform").addEventListener("submit", (e)=>{
         .then((res)=> res.json())
         .then((writes)=> console.log(writes));
 
-        window.location.href="http://127.0.0.1:5500/index.html";
-    }
+    wpopclose();
+})
 
-   
-});
+document.getElementById("backwritepost").addEventListener("click",()=>{
+    window.history.back();
+})
+
 let get = async()=>{
     fetch("http://localhost:8080/addblogs")
     .then((res)=> res.json())
